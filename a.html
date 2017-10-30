@@ -1,0 +1,320 @@
+<html>
+  
+<head>
+   
+<link rel="stylesheet" href="main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+-
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+body{
+border:5px solid red;
+}
+</style>
+</head>
+
+<body>
+<header id="mainHeader">
+   
+ <div class="mainContent">
+  
+<ul>       
+ 
+<div class="Box">
+ 
+ <div class="logo">
+            
+<img src="images\9.jpg" height="140" width="200">
+          
+</div>
+                
+<center><h1>BLOOD DONATION BANK</h1></center> 
+        
+</div>
+
+</ul>    
+ 
+</header>
+
+  
+<br>
+<br>
+<br>
+<br>
+<nav id="Menu">
+    
+<div class="mainContent">
+
+        
+<ul>
+  
+       
+<li><a href="a.html">HOME</a></li>
+            
+<li><a href="aboutus.html">ABOUT US</a> </li>          
+  <li><a href="hostingablooddrive.html">ABOUT BLOOD</a></li>
+            
+<li><a href="bloodtips.html">RAISE A REQUEST</a></li>
+           
+ <li><a href="volunter.html">GET INVOLVED</a></li>
+            
+ <li><a href="volunter.html">SPONSER IT</a></li>
+ 
+ <li><a href="volunter.html">OUR BLOG</a></li>
+ 
+<li ><a href="Contact.html">CONTACT US</a></li>
+
+</ul>
+    
+</div>
+  </nav> 
+
+</section>
+
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images\1.jpg" height="500" width="800">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images\3.jpg" height="500" width="800">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images\4.jpg" height="500" width="800">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images\6.jpg" height="500" width="800">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images\7.jpg" height="500" width="800">
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images\10.jpg" height="500" width="800">
+ </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+}
+</script>
+</div>
+<h3>Started just with a blood helpline, we now provide a 360 degree solution to problem of blood shortage in the country!</h3>
+<div class="table">
+<center>
+<table>
+<tr><th><b>UNITING YOUTH</b></th><th><b>ORGANIZING CAMPS</b></th><th><b>RUNNING HELPLINE</b></th><th><b>SAVING LIFES</b></th></tr>
+<tr><td><center><img src="images\yo.png" height="100" width="100"></center></td>
+<td><center><img src="images\c.png" height="100" width="100"></center></td>
+<td><center><img src="images\s.jpg" height="100" width="100"></center></td>
+<td><center><img src="images\he.png" height="100" width="100"></center></td></tr>
+<tr><td>We are complettely youth led initialive. In these years, we have expanded from a team of 5 to a team of 100+youth covering over many states.</td>
+<td>Organizing blood donation camps is one of our core activies. All our camps focus on giving blood donor the best experience.Learn more on how to organize a camp. </td>
+<td>We run a 24*7,365 days helpline to help those are in need blood urgently.If you need support raise a blood request here,we will try our level best to help you.</td>
+<td>We work with a sole objective of saving lives.We act as a channel connecting voluntary donors with those who need blood. Till now,we have helped save over 20,000 lives!</td>
+</tr>
+</table>
+</center>
+</div>
+<div class="para">
+<h3>We are expanding fast- join our movement and support the cause</h3>
+<br>
+<p>We are constantly looking for support from people. If you are passionate about the cause, you can adopt any of our projects/donate for our regular activities. If you have expertise in some aspects, you can also provide thought leadership to.</p> 
+</div>
+<section id="donorSearch">
+ 
+ <div class="mainContent">
+    
+
+</div>
+</section>
+<section id="blog">
+  
+<div class="mainContent">
+    
+<ul>
+        
+<li>
+            
+<div class="Box Info">
+               
+ <img src="images\blog (1).png">
+            
+</div>
+        
+</li>
+       
+ <li>
+            
+<div class="Box Info">
+                
+<img src="images\blog (2).png">
+            
+</div>
+        
+</li>
+
+        
+<li>
+            
+<div class="Box Info">
+                
+<img src="images\blog (3).png">
+            
+</div>
+        </li>
+    </ul>
+  </div>
+</section>
+<section id="youtube">
+  
+<div class="mainContent">
+    <ul>
+        <li>
+            
+<iframe width="300" height="166" src="https://www.youtube.com/embed/usY3wkwyYkg" frameborder="0" allowfullscreen></iframe>
+        
+</li>
+        
+<a name="TOP"></a>
+        
+<li style="width:500px; line-height:2; margin-left:20px;">
+          
+<h4 style="color:#d6351e;">What’s It Like to Give Platelets for the First Time?</h4>
+          
+<p>Join Mindy as she donates platelets for the first time and learn why they’re so important, and what you can expect during a donation.
+ Please make an appointment now to give platelets so that cancer treatments and surgeries aren’t delayed.</p>
+        </li>
+
+    </ul>
+  
+</div>
+
+</section>
+
+
+<footer>
+CONNECT WITH US :
+<a target="_blank" title"find us on fb"
+href="http://www..facebook.com"><img alt="follow us on fb" src="images\f.png" border=0 width="30" height="30"></a> 
+<a target="_blank" title"find us on twitter"
+href="http://www..twitter.com"><img alt="follow us on twitter" src="images\t.png" border=0 width="30" height="30"></a> 
+   <a target="_blank" title"find us on linkedin"
+href="http://www..linkedin.com"><img alt="follow us on linkedin" src="images\li.png" border=0 width="30" height="30"></a> 
+ <a target="_blank" title"find us on youtube"
+href="http://www..youtube.com"><img alt="follow us on youtube" src="images\y.png" border=0 width="30" height="30"></a> 
+       
+    
+</footer>
+
+
+
+</body>
+
+</html>
